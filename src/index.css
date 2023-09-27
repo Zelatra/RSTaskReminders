@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+  padding: 30px;
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  max-width: 100%;
+  min-height: 100vh;
+  column-count: 3;
+  column-gap: 30px;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(2, 400px);
+}
+
+.ToDo {
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  border: 1px solid black;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  width: 400px;
+  height: 350px;
+  background-color: rgba(192, 192, 192, 0.651);
+}
+
+.Objectives {
+  text-align: left;
+  justify-content: center;
+  list-style-position: inside;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  position: absolute;
+  font-size: small;
+  top: 30px;
+}
+
+.taskTitle {
+  background-color: rgba(13, 13, 126, 0.87);
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.app {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.hideContent {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: none;
+  z-index: -1;
+}
+
+.complete-task {
+  opacity: 50%;
+  width: 400px;
+  height: 350px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin: 10px;
+  background-color: rgba(192, 192, 192, 0.651);
+  border: 1px solid black;
+  text-align: center;
+}
+
+.btn-position {
+  float: right;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.banner-top {
+  background-color: rgba(13, 13, 126, 0.87);
+  width: 100%; 
+  font-size: 32px;
+  position: relative;
+  text-align: right;
+}
+
+.banner-btn {
+  background-color: rgba(13, 13, 126, 0.87);
+  color: white;
+  border-color: black;
+  font-size: 32px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: solid 1px;
+  position: relative;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.banner-btn:hover {
+  background-color:blue;
+}
+
+.feather-btn {
+  background-color: rgba(13, 13, 126, 0.87);
+  color: gold;
+  border-color: rgba(13, 13, 126, 0.87);
+  border: 0px;
+  float: left;
+  font-size: 21px;
+}
+
+.monthly-btn {
+  background-color: rgba(13, 13, 126, 0.87);
+  color: gold;
+  border-color: rgba(13, 13, 126, 0.87);
+  border: 0px;
+  float: left;
+  font-size: 21px;
+}
+
+.weekly-btn {
+  background-color: rgba(13, 13, 126, 0.87);
+  color: gold;
+  border-color: rgba(13, 13, 126, 0.87);
+  border: 0px;
+  float: left;
+  font-size: 21px;
+}
+
+.daily-btn {
+  background-color: rgba(13, 13, 126, 0.87);
+  color: gold;
+  border-color: rgba(13, 13, 126, 0.87);
+  border: 0px;
+  float: left;
+  font-size: 21px;
+}
+
+.rune-btn {
+  background-color: rgba(13, 13, 126, 0.87);
+  color: gold;
+  border-color: rgba(13, 13, 126, 0.87);
+  border: 0px;
+  float: left;
+  font-size: 21px;
+}
+
+.btn-list {
+  align-items: right;
+  position: static;
+}
+
+.btn-list li {
+  display: inline;
+}
