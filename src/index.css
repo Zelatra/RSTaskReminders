@@ -98,7 +98,6 @@ main {
 }
 
 .banner-btn {
-  background-color: rgba(13, 13, 126, 0.87);
   color: white;
   border-color: black;
   font-size: 32px;
@@ -111,7 +110,8 @@ main {
 }
 
 .banner-btn:hover {
-  background-color:blue;
+  background-color:rgba(3, 3, 95, 0.993);
+  color: white;
 }
 
 .feather-btn {
@@ -166,4 +166,14 @@ main {
 
 .btn-list li {
   display: inline;
+}
+
+.profile {
+  margin-top: 10%;
+  text-align: center;
+  font-size: larger;
+  width: 300px;
+  height: 300px;
+  margin-left: 40%;
+  border: 1px solid black;
 }

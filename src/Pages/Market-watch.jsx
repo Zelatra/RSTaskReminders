@@ -1,8 +1,11 @@
+import Navigation from "./Navigation";
+
 function MarketWatch() {
     return(
     <div>
-        <header className="banner-top">
-            
+        <Navigation />
+        <header className="profile-title">
+            <h1>Market watch</h1>
         </header>
     </div>
     )

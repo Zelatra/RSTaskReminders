@@ -1,9 +1,9 @@
-import NavBar from "../Navbar";
+import Navigation from "./Navigation";
 
 function CreateReminder() {
     return (
     <div>
-        <NavBar />
+        <Navigation />
         <header className="reminder-title">
             <h1>Create custom reminders</h1>
         </header>

@@ -8,9 +8,9 @@ function DndDaily(props) {
     const [btnName, setBtnName] = useState(true);
     const [icon, setIcon] = useState(true);
 
-const switchFavorite = () => {
-  setIcon(!icon);
-}
+    const switchFavorite = () => {
+      setIcon(!icon);
+    }
     
     const handleToggle = () => {
       setDivName(!divName);
@@ -50,20 +50,20 @@ const switchFavorite = () => {
 
 function DndWeekly(props) {
 
-const [divName, setDivName] = useState(true);
-const [btnName, setBtnName] = useState(true);
-const [icon, setIcon] = useState(true);
+    const [divName, setDivName] = useState(true);
+    const [btnName, setBtnName] = useState(true);
+    const [icon, setIcon] = useState(true);
 
-const switchFavorite = () => {
-  setIcon(!icon);
-}
+    const switchFavorite = () => {
+      setIcon(!icon);
+    }
 
-const handleToggle = () => {
-  setDivName(!divName);
-}
-const refreshName = () => {
-  setBtnName(!btnName);
-}
+    const handleToggle = () => {
+      setDivName(!divName);
+    }
+    const refreshName = () => {
+      setBtnName(!btnName);
+    }
 
     return (
         <div className={divName ? "ToDo" : "complete-task"}>
@@ -87,19 +87,19 @@ const refreshName = () => {
 
 function DndMonthly(props) {
 
-const [divName, setDivName] = useState(true);
-const [btnName, setBtnName] = useState(true);
-const [icon, setIcon] = useState(true);
+    const [divName, setDivName] = useState(true);
+    const [btnName, setBtnName] = useState(true);
+    const [icon, setIcon] = useState(true);
 
-const switchFavorite = () => {
-  setIcon(!icon);
-}
-const handleToggle = () => {
-  setDivName(!divName);
-}
-const refreshName = () => {
-  setBtnName(!btnName);
-}
+    const switchFavorite = () => {
+      setIcon(!icon);
+    }
+    const handleToggle = () => {
+      setDivName(!divName);
+    }
+    const refreshName = () => {
+      setBtnName(!btnName);
+    }
 
     return (
         <div className={divName ? "ToDo" : "complete-task"}>
@@ -119,4 +119,4 @@ const refreshName = () => {
     )
 }
 
-  export {DndDaily, DndWeekly, DndMonthly};
+export {DndDaily, DndWeekly, DndMonthly};

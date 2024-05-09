@@ -1,18 +1,10 @@
-import FeatherShops from "../feathers"
-import RuneShops from '../runeShop';
-import {DndDaily, DndWeekly, DndMonthly} from "../DnD";
-import '../index.css';
-import NavBar from "../Navbar";
+import { funcArr } from "../Tasks";
 
-function Home() {
+function Home(props) {
     return(
-        <div>
+        <div> 
             <main>
-                <FeatherShops name='Feather Shop Run' />
-                <RuneShops name='Rune Shop Run' />
-                <DndDaily name='Daily distractions and diversions' />
-                <DndWeekly name='Weekly distractions and diversions' />
-                <DndMonthly name='Monthly distractions and diversion' />
+                {funcArr.map(func => func.component(func.props))}
             </main>
         </div>
     )

@@ -5,7 +5,7 @@ function Navigation() {
     return(
         <div>
             <header className="banner-top">
-                <ul>
+                <ul className="btn-list">
                     <li>
                         <NavLink to="/" className="banner-btn">Home</NavLink>
                     </li> 
@@ -13,10 +13,10 @@ function Navigation() {
                         <NavLink to="/profile" className="banner-btn">Profile</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/create-reminder" className="banner-btn">Create reminder</NavLink>
+                        <NavLink to="/create" className="banner-btn">Create reminder</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/market-watch" className="banner-btn">Market watch</NavLink>
+                        <NavLink to="/market" className="banner-btn">Market watch</NavLink>
                     </li>
                 </ul>
             </header>
